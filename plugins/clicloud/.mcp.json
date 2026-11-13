@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "clicloud": {
+      "type": "http",
+      "url": "https://api.clicloud.app/mcp"
+    }
+  }
+}

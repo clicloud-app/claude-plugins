@@ -1,0 +1,23 @@
+{
+  "name": "clicloud",
+  "description": "CLI, the agent-native cloud",
+  "owner": {
+    "name": "CLI",
+    "email": "support@clicloud.app",
+    "url": "https://clicloud.app"
+  },
+  "plugins": [
+    {
+      "name": "clicloud",
+      "source": "./plugins/clicloud",
+      "description": "Deploy and run apps, databases, static sites and functions on CLI (clicloud.app) from Claude, with approvals and spending limits you set in the dashboard.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "clicloud-x402",
+      "source": "./plugins/clicloud-x402",
+      "description": "Every CLI tool through a local MCP server, including x402 USDC payments from an agent wallet you fund, capped by a spending limit you set.",
+      "version": "0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@clicloud/mcp@0.1.0"
+      ],
+      "env": {
+        "CLI_API_URL": "https://api.clicloud.app",
+        "CLI_API_KEY": "${user_config.api_key}",
+        "CLI_AGENT_PRIVATE_KEY": "${user_config.agent_wallet_key}",
+        "CLI_SPEND_LIMIT_USDC": "${user_config.spend_limit_usdc}"
+      }
+    }
+  }
+}

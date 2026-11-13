@@ -1,0 +1,50 @@
+{
+  "name": "clicloud-x402",
+  "displayName": "CLI Cloud (self-hosted, x402)",
+  "description": "Every CLI tool through a local MCP server, including x402 USDC payments from an agent wallet you fund, capped by a spending limit you set.",
+  "version": "0.1.0",
+  "author": {
+    "name": "CLI",
+    "email": "support@clicloud.app",
+    "url": "https://clicloud.app"
+  },
+  "homepage": "https://clicloud.app/docs/claude",
+  "repository": "https://github.com/clicloud/claude-plugins",
+  "license": "ISC",
+  "documentationUrl": "https://clicloud.app/docs/claude",
+  "supportUrl": "https://clicloud.app/support",
+  "privacyPolicyUrl": "https://clicloud.app/privacy",
+  "termsOfServiceUrl": "https://clicloud.app/terms",
+  "keywords": [
+    "deploy",
+    "hosting",
+    "paas",
+    "x402",
+    "usdc",
+    "agents"
+  ],
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "CLI API key",
+      "description": "Make one in the CLI dashboard: open your project, then Connect an agent. It has its own role and spending cap.",
+      "sensitive": true,
+      "required": true
+    },
+    "agent_wallet_key": {
+      "type": "string",
+      "title": "Agent wallet private key (optional)",
+      "description": "An EVM wallet (0x hex) the agent pays from over x402. Use a wallet that only holds what you're willing for the agent to spend. Leave empty to never pay.",
+      "sensitive": true,
+      "default": ""
+    },
+    "spend_limit_usdc": {
+      "type": "number",
+      "title": "x402 spending limit (USDC)",
+      "description": "The most this server may pay over x402 per session. 0 never pays.",
+      "default": 0,
+      "min": 0,
+      "max": 10000
+    }
+  }
+}
