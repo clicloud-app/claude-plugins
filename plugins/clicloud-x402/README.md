@@ -8,7 +8,7 @@ exceed the spending limit you set when you install it.
 ## Install
 
 ```
-/plugin marketplace add clicloud/claude-plugins
+/plugin marketplace add clicloud-app/claude-plugins
 /plugin install clicloud-x402@clicloud
 ```
 

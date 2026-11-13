@@ -9,7 +9,7 @@ is recorded in CLI with the reason Claude gave.
 ## Install
 
 ```
-/plugin marketplace add clicloud/claude-plugins
+/plugin marketplace add clicloud-app/claude-plugins
 /plugin install clicloud@clicloud
 ```
 
