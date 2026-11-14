@@ -1,8 +1,8 @@
 {
   "name": "clicloud",
-  "displayName": "CLI Cloud",
+  "displayName": "CLI",
   "description": "Deploy and run apps, databases, static sites and functions on CLI (clicloud.app) from Claude, with approvals and spending limits you set in the dashboard.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": {
     "name": "CLI",
     "email": "support@clicloud.app",
@@ -10,11 +10,12 @@
   },
   "homepage": "https://clicloud.app/docs/claude",
   "repository": "https://github.com/clicloud-app/claude-plugins",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE",
   "documentationUrl": "https://clicloud.app/docs/claude",
   "supportUrl": "https://clicloud.app/support",
   "privacyPolicyUrl": "https://clicloud.app/privacy",
   "termsOfServiceUrl": "https://clicloud.app/terms",
+  "icon": "./assets/icon.png",
   "keywords": [
     "deploy",
     "hosting",

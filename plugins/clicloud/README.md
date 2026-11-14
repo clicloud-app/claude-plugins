@@ -1,6 +1,6 @@
-# CLI Cloud for Claude
+# CLI for Claude
 
-CLI Cloud lets Claude deploy and run your apps, workers, databases, static sites and functions on
+CLI lets Claude deploy and run your apps, workers, databases, static sites and functions on
 [CLI](https://clicloud.app). Claude can create services from a GitHub repository, set variables,
 deploy, read logs and metrics, roll back, manage domains and backups, and check whether an app is
 ready for real traffic. Changes are marked so Claude asks you before making them, and every change

@@ -5,7 +5,7 @@ description: Deploy and operate apps, databases and paid APIs on CLI (clicloud.a
 
 You can deploy and run things on CLI through the cli MCP tools (cli_whoami, cli_create_service, cli_deploy and the rest).
 
-Before your first change in a session, read the full guide your CLI server serves at /skill.md (CLI_API_URL, by default https://api.clicloud.app/skill.md). It covers the deploy loop, funding, guardrails, and what to do for every error code.
+The deploy loop: cli_get_project to see what's there, cli_create_service from the code's git repository (or `cli up` from the folder), cli_set_env for the variables the code reads, cli_create_database and cli_link_database if it needs one, then cli_deploy and cli_deploy_status or cli_logs until it's healthy. Errors carry `error.code` and `remediation` steps: follow them. The tools' descriptions say the rest; the people-facing guide is at https://clicloud.app/docs.
 
 Rules that always apply:
 

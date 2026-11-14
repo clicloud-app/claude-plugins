@@ -5,7 +5,7 @@ Two plugins for [CLI](https://clicloud.app), the agent-native cloud. Pick one.
 | Plugin | Runs | Payments | Install |
 | --- | --- | --- | --- |
 | `clicloud` | Nothing locally: connects to CLI's hosted MCP server and signs in with OAuth | None in Claude: add credit in the dashboard | `/plugin install clicloud@clicloud` |
-| `clicloud-x402` | `npx @clicloud/mcp` on your machine | x402 USDC from an agent wallet, up to your limit | `/plugin install clicloud-x402@clicloud` |
+| `clicloud-x402` | `npx @clicloud-app/mcp` on your machine | x402 USDC from an agent wallet, up to your limit | `/plugin install clicloud-x402@clicloud` |
 
 Add the marketplace first: `/plugin marketplace add clicloud-app/claude-plugins`.
 
