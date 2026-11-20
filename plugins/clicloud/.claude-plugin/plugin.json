@@ -1,8 +1,8 @@
 {
   "name": "clicloud",
-  "displayName": "CLI",
+  "displayName": "clicloud",
   "description": "Deploy and run apps, databases, static sites and functions on CLI (clicloud.app) from Claude, with approvals and spending limits you set in the dashboard.",
-  "version": "1.0.0",
+  "version": "1.3.3",
   "author": {
     "name": "CLI",
     "email": "support@clicloud.app",
