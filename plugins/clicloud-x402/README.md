@@ -27,7 +27,18 @@ The key and wallet are stored in your system's secure credential store, not in s
 - The server talks to `https://api.clicloud.app` with your API key. If Claude opens the server's guide resource
   (`cli://skill`), it's read from `https://api.clicloud.app/skill.md`; the plugin's own skills don't need it.
 - With a wallet set, it signs x402 payments (USDC on Base or Solana) and sends them to CLI or to the
-  paid API being called, up to your limit. The private key never leaves your machine.
+  paid API being called, up to your limit. The private key never leaves your machine. A top-up is
+  signed only for the amount asked, to the address and USDC token CLI publishes (or the address in
+  `CLI_PAY_TO`, if you set one).
+
+Network hosts it contacts:
+
+| Host | Why |
+|---|---|
+| `registry.npmjs.org` | `npx` downloads the pinned package |
+| `api.clicloud.app` | Every CLI tool call, and `/v1/config` to check where payments go |
+| The paid API you ask it to call | Only for `cli_paid_apis` calls, with the x402 payment attached |
+| A Solana RPC (`CLI_SOLANA_RPC`) | Only when paying on Solana, for a recent blockhash |
 - It never reads your conversation, Claude's memory or your files beyond what you ask Claude to deploy.
 
 Support: support@clicloud.app · Docs: https://clicloud.app/docs/claude

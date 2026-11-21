@@ -2,7 +2,7 @@
   "name": "clicloud-x402",
   "displayName": "clicloud (local, x402)",
   "description": "Every CLI tool through a local MCP server, including x402 USDC payments from an agent wallet you fund, capped by a spending limit you set.",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "author": {
     "name": "CLI",
     "email": "support@clicloud.app",
